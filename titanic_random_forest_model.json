@@ -1,0 +1,63 @@
+{
+  "model_type": "RandomForestClassifier",
+  "n_estimators": 100,
+  "max_depth": null,
+  "random_state": 42,
+  "feature_names": [
+    "Pclass",
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "Sex",
+    "Embarked"
+  ],
+  "numeric_features": [
+    "Pclass",
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare"
+  ],
+  "categorical_features": [
+    "Sex",
+    "Embarked"
+  ],
+  "preprocessing": {
+    "numeric_strategy": "median + standardscaler",
+    "categorical_strategy": "most_frequent + onehot"
+  },
+  "performance": {
+    "test_accuracy": 0.8156424581005587,
+    "test_f1_score": 0.7441860465116279,
+    "test_roc_auc": 0.8294466403162055,
+    "test_precision": 0.8,
+    "test_recall": 0.6956521739130435
+  },
+  "predictions_sample": {
+    "predictions": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "probabilities": [
+      0.18,
+      0.09,
+      0.03,
+      0.07999999999999999,
+      0.87,
+      0.3,
+      0.87,
+      0.81,
+      0.46,
+      0.29555555555555557
+    ]
+  }
+}
