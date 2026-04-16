@@ -21,7 +21,7 @@ A modern, interactive web application for predicting Titanic passenger survival 
   - Visual probability bar
 
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
-- **Professional UI**: Modern gradient design with Bootstrap styling
+- **Professional UI**: Modern gradient design with Bootstrap and external CSS styling
 
 ## 🚀 How to Use
 
@@ -35,6 +35,7 @@ A modern, interactive web application for predicting Titanic passenger survival 
    ```
    MLOPs/
    ├── index.html
+   ├── style.css
    ├── predict.js
    ├── titanic_random_forest_model.json
    └── README.md
@@ -102,9 +103,16 @@ The model considers these factors:
 ### `index.html`
 The main webpage containing:
 - HTML form with input fields
-- Bootstrap styling for responsive design
+- Bootstrap integration and page structure
 - Real-time slider value updates
 - Result display container
+
+### `style.css`
+External stylesheet containing:
+- Page layout and spacing
+- Form and control styling
+- Buttons, loading, and result state styles
+- Responsive visual design rules
 
 ### `predict.js`
 JavaScript engine providing:
@@ -150,7 +158,7 @@ Based on training data:
 To deploy this website:
 
 1. **Static Host** (GitHub Pages, Netlify, Vercel):
-   - Upload all three files to your hosting service
+   - Upload all required web files (`index.html`, `style.css`, `predict.js`, `titanic_random_forest_model.json`)
    - Access via the provided URL
 
 2. **Custom Server**:
